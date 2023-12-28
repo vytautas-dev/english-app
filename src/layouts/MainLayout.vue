@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
-
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header elevated class="bg-primary text-white" height-hint="98">
@@ -22,7 +18,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
     </q-header>
 
     <q-page-container>
-      <HelloWorld />
       <router-view />
     </q-page-container>
   </q-layout>

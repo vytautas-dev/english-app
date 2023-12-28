@@ -1,16 +1,24 @@
-import './assets/main.css'
+import './styles/quasar.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-import { Quasar } from 'quasar'
-import quasarUserOptions from './quasar-user-options'
 
-const app = createApp(App).use(Quasar, quasarUserOptions)
+//Quasar
+import { Quasar, Notify } from 'quasar'
+import quasarLang from 'quasar/lang/pl'
+import '@quasar/extras/material-icons/material-icons.css'
+import 'quasar/src/css/index.sass'
 
-app.use(createPinia())
-app.use(router)
+const app = createApp(App)
+
+app.use(createPinia()).use(router).use(Quasar, {
+  plugins: {
+    Notify
+  },
+  lang: quasarLang
+})
 
 app.mount('#app')

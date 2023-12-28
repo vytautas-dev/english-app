@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <q-layout view="hHh lpR fFf">
@@ -8,7 +6,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" alt="logo" />
           </q-avatar>
           Title
         </q-toolbar-title>
@@ -22,7 +20,6 @@ import HelloWorld from '@/components/HelloWorld.vue'
     </q-header>
 
     <q-page-container>
-      <HelloWorld />
       <router-view />
     </q-page-container>
   </q-layout>

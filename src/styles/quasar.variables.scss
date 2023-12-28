@@ -1,8 +1,12 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
 
-$primary   : #027BE3;
-$secondary : #26A69A;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+$typography-font-family: 'Poppins', sans-serif !default;
+
+$primary   : #2c003e;
+$secondary : #240b36;
 $accent    : #9C27B0;
 
 $dark      : #1D1D1D;

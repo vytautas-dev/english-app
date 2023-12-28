@@ -1,1 +1,5 @@
 @import './quasar.variables.scss';
+
+.main-background {
+  background: linear-gradient(to bottom right, $primary, $secondary);
+}
